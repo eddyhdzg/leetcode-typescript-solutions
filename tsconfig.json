@@ -1,31 +1,21 @@
 {
   "compilerOptions": {
-    "rootDir": "problems",
-    "outDir": "bin",
     "module": "esnext",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
+    "rootDir": "problems",
     "target": "es2016",
     "lib": ["esnext", "DOM"],
-    // "types": ["reflect-metadata"],
-    "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-
-    // CRA
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
     "isolatedModules": false,
-    "noEmit": true,
-    "jsx": "react"
+    "noEmit": true
   },
-  "include": ["problems", "./"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["problems", "playground"]
 }

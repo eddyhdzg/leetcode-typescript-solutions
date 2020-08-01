@@ -7,4 +7,3 @@ dist
 .gitignore
 *.md
 *.log
-*.lock
