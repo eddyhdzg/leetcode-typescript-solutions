@@ -4,6 +4,8 @@
 function detectCapitalUse(word: string) {
   const pascalCase = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
   return (
-    word === pascalCase || word === word.toLocaleLowerCase() || word === word.toLocaleUpperCase()
+    word === pascalCase ||
+    word === word.toLocaleLowerCase() ||
+    word === word.toLocaleUpperCase()
   );
 }
