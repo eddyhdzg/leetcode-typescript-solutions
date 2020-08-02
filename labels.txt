@@ -1,0 +1,7 @@
+Labels for Leetcode Discuss
+
+Typescript Solution
+
+Typescript Solutions
+
+More solutions at https://github.com/eddyhdzg/leetcode-problems
