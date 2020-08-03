@@ -1,4 +1,4 @@
-# Leetcode problems by eddyhdzg
+# Leetcode TypeScript Solutions by eddyhdzg
 
 Leetcode profile - [leetcode.com/eddyhdzg/](https://leetcode.com/eddyhdzg/)
 
@@ -11,19 +11,19 @@ Leetcode profile - [leetcode.com/eddyhdzg/](https://leetcode.com/eddyhdzg/)
 ### Download typescript
 
 ```sh
-$ npm install -g typescript
-$ npm install -g ts-node
+npm install -g typescript
+npm install -g ts-node
 
 ```
 
 ### Run typescript file
 
 ```sh
-$ ts-node playground.ts
+ts-node playground.ts
 ```
 
 ### Convert ts code to js file
 
 ```sh
-$ tsc playground.ts --outFile playground.js
+tsc playground.ts --outFile playground.js
 ```

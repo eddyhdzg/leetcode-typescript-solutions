@@ -14,8 +14,9 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": false,
-    "noEmit": true
+    "noEmit": true,
+    "checkJs": false
   },
   "exclude": ["node_modules"],
-  "include": ["problems", "playground"]
+  "include": ["problems", "./playground.ts"]
 }

@@ -1,7 +1,12 @@
-Labels for Leetcode Discuss
+// Labels for Leetcode Discuss
 
+1) Title
 Typescript Solution
-
+or
 Typescript Solutions
 
-More solutions at https://github.com/eddyhdzg/leetcode-problems
+2) Footer
+More solutions at https://github.com/eddyhdzg/leetcode-typescript-solutions
+
+3) Tag
+typescript
