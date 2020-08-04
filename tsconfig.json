@@ -6,7 +6,7 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "rootDir": "problems",
-    "target": "es2016",
+    "target": "ESNext",
     "lib": ["esnext", "DOM"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -15,7 +15,8 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": false,
     "noEmit": true,
-    "checkJs": false
+    "checkJs": false,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"],
   "include": ["problems", "./playground.ts"]
