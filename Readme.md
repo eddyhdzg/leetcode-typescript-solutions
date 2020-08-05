@@ -2,7 +2,9 @@
 
 Leetcode profile - [leetcode.com/eddyhdzg/](https://leetcode.com/eddyhdzg/)
 
-- I had 143 problems solved before I actually started to save my problems on August 1,2020.
+- I had 143 problems solved in different languages (c++, js, ts, python) before I actually started to document my problems on August 1,2020.
+
+- Now I wilk stick with typescript
 
 - I will try to submit 1 new typescript solution per day.
 

@@ -26,6 +26,7 @@ function countNegatives(grid: number[][]): number {
 // Binary Search
 // Runtime: 76 ms, faster than 59.07% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
 // Memory Usage: 38 MB, less than 5.00% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
+
 const searchFirstNegativeIndex = (arr: number[]) => {
   let r = arr.length - 1;
   let l = 0;
