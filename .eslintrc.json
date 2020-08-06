@@ -11,6 +11,8 @@
     "radix": "off",
     "@typescript-eslint/no-unused-vars": ["off"],
     "@typescript-eslint/ban-ts-comment": ["off"],
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
+    "@typescript-eslint/no-this-alias": "off"
   }
 }
