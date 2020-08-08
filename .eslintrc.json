@@ -13,6 +13,9 @@
     "@typescript-eslint/ban-ts-comment": ["off"],
     "no-param-reassign": "off",
     "no-restricted-syntax": "off",
-    "@typescript-eslint/no-this-alias": "off"
+    "@typescript-eslint/no-this-alias": "off",
+    "lines-between-class-members": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "no-use-before-define": "off"
   }
 }
