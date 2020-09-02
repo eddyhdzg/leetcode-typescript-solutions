@@ -1,6 +1,6 @@
 // Runtime: 96 ms, faster than 45.28% of JavaScript online submissions for Best Time to Buy and Sell Stock III.
 // Memory Usage: 38.8 MB, less than 49.81% of JavaScript online submissions for Best Time to Buy and Sell Stock III.
-
+// @ts-ignore
 function maxProfit(prices: number[]): number {
   if (prices.length <= 1) return 0;
 
