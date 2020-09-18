@@ -1,50 +1,76 @@
-// type Flower = 1 | 2 | 3 | 4;
+// TS
+// Runtime: 272 ms, faster than 100.00% of TypeScript online submissions for Flower Planting With No Adjacent.
+// Memory Usage: 59.7 MB, less than 100.00% of TypeScript online submissions for Flower Planting With No Adjacent.
+function gardenNoAdj(N: number, paths: number[][]): number[] {
+  const hash: {
+    [key: string]: {
+      connections: number[];
+      type: number;
+    };
+  } = {};
 
-// function gardenNoAdj(N: number, paths: number[][]): number[] {
-//   const graph: { [key: string]: number[] } = {};
+  for (let i = 1; i <= N; i++) {
+    hash[i] = {
+      connections: [],
+      type: 0,
+    };
+  }
 
-//   paths.forEach(([x, y]) => {
-//     graph[x] ? graph[x].push(y) : (graph[x] = [y]);
-//     graph[y] ? graph[y].push(x) : (graph[y] = [x]);
+  paths.forEach(([a, b]) => {
+    if (a > b) {
+      hash[a].connections.push(b);
+    } else {
+      hash[b].connections.push(a);
+    }
+  });
+
+  Object.entries(hash).forEach(([key, { connections }]) => {
+    const possibleTypes = new Set([1, 2, 3, 4]);
+
+    connections.forEach((connection) => {
+      possibleTypes.delete(hash[connection].type);
+    });
+
+    hash[key].type = Math.min(...possibleTypes);
+  });
+
+  return Object.values(hash).map(({ type }) => type);
+}
+
+// // JS
+// // Runtime: 280 ms, faster than 24.00% of JavaScript online submissions for Flower Planting With No Adjacent.
+// // Memory Usage: 59.5 MB, less than 12.00% of JavaScript online submissions for Flower Planting With No Adjacent.
+// var gardenNoAdj = function (N, paths) {
+//   const hash = {};
+
+//   // Initialize
+//   for (let i = 1; i <= N; i++) {
+//     hash[i] = {
+//       connections: [],
+//       type: 0,
+//     };
+//   }
+
+//   // Add connection in bigger path
+//   paths.forEach(([a, b]) => {
+//     if (a > b) {
+//       hash[a].connections.push(b);
+//     } else {
+//       hash[b].connections.push(a);
+//     }
 //   });
 
-//   const gardens: number[][] = Array(N)
-//     .fill(null)
-//     .map(() => []);
+//   // Set minimum possible path
+//   Object.entries(hash).forEach(([key, { connections }]) => {
+//     const possibleTypes = new Set([1, 2, 3, 4]);
 
-//   Object.entries(graph).forEach(([garden, neighbors]) => {
-//     const flowers: Flower[] = [1, 2, 3, 4];
-
-//     neighbors.forEach((neighbor) => {
-//       if (gardens[neighbor - 1].length) {
-//         flowers.splice(gardens[neighbor - 1][0] - 1, 1);
-//       }
+//     connections.forEach((connection) => {
+//       possibleTypes.delete(hash[connection].type);
 //     });
 
-//     gardens[parseInt(garden) - 1].push(flowers[0]);
+//     hash[key].type = Math.min(...possibleTypes);
 //   });
 
-//   return gardens.map((garden) => garden[0]);
-// }
-
-// //   return ans;
-
-// // gardenNoAdj(3, [
-// //   [1, 2],
-// //   [2, 3],
-// //   [3, 1],
-// // ]);
-
-// gardenNoAdj(4, [
-//   [1, 2],
-//   [3, 4],
-// ]);
-
-// // gardenNoAdj(4, [
-// //   [1, 2],
-// //   [2, 3],
-// //   [3, 4],
-// //   [4, 1],
-// //   [1, 3],
-// //   [2, 4],
-// // ]);
+//   // Return types
+//   return Object.values(hash).map(({ type }) => type);
+// };

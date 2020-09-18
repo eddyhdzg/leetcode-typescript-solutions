@@ -14,3 +14,5 @@ Array.from({ length: N }, (_, i) => i+1)
 ### Slice vs Splice
 
 splice() changes the original array whereas slice() doesn't but both of them returns array object.
+
+slice is end is not inclusive
