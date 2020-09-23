@@ -11,6 +11,12 @@ Array.from({ length: N }, (_, i) => i+1)
 [ ...Array(N).keys() ].map((i) => f(i))
 ```
 
+#### Bidimentional array
+
+```
+dp = Array(m).fill(null).map(() => Array(n));
+```
+
 ### Slice vs Splice
 
 splice() changes the original array whereas slice() doesn't but both of them returns array object.
