@@ -19,5 +19,5 @@
     "skipLibCheck": true
   },
   "exclude": ["node_modules"],
-  "include": ["problems", "./playground.ts"]
+  "include": ["./playground.ts"]
 }

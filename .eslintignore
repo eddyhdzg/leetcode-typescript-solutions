@@ -7,3 +7,4 @@ dist
 .gitignore
 *.md
 *.log
+playground.ts
