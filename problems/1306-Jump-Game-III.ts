@@ -1,13 +1,61 @@
-// Runtime: 80 ms, faster than 67.91% of JavaScript online submissions for Jump Game III.
-// Memory Usage: 40.8 MB, less than 67.38% of JavaScript online submissions for Jump Game III.
-
+// TS
+// Runtime: 76 ms, faster than 100.00% of TypeScript online submissions for Jump Game III.
+// Memory Usage: 43.9 MB, less than 100.00% of TypeScript online submissions for Jump Game III.
 function canReach(arr: number[], start: number): boolean {
-  if (start < 0 || start >= arr.length || arr[start] === -1) return false;
-  if (arr[start] === 0) return true;
+  const visited = new Set<number>();
+  const stack: number[] = [start];
 
-  const left = start - arr[start];
-  const right = start + arr[start];
-  arr[start] = -1;
+  while (stack.length) {
+    const currIndex = stack.shift()!;
+    const currValue = arr[currIndex];
 
-  return canReach(arr, left) || canReach(arr, right);
+    if (currValue === 0) return true;
+
+    if (!visited.has(currIndex)) {
+      visited.add(currIndex);
+
+      const rightJump = currIndex + currValue;
+      const leftJump = currIndex - currValue;
+
+      if (!visited.has(leftJump) && leftJump >= 0) {
+        stack.push(leftJump);
+      }
+      if (!visited.has(rightJump) && rightJump < arr.length) {
+        stack.push(rightJump);
+      }
+    }
+  }
+
+  return false;
 }
+
+// JS
+// Runtime: 80 ms, faster than 71.50% of JavaScript online submissions for Jump Game III.
+// Memory Usage: 43.2 MB, less than 5.00% of JavaScript online submissions for Jump Game III.
+// var canReach = function (arr, start) {
+//   const visited = new Set();
+//   const stack = [start];
+
+//   while (stack.length) {
+//     const currIndex = stack.shift();
+//     const currValue = arr[currIndex];
+
+//     if (currValue === 0) return true;
+
+//     if (!visited.has(currIndex)) {
+//       visited.add(currIndex);
+
+//       const rightJump = currIndex + currValue;
+//       const leftJump = currIndex - currValue;
+
+//       if (!visited.has(leftJump) && leftJump >= 0) {
+//         stack.push(leftJump);
+//       }
+//       if (!visited.has(rightJump) && rightJump < arr.length) {
+//         stack.push(rightJump);
+//       }
+//     }
+//   }
+
+//   return false;
+// };

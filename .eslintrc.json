@@ -16,7 +16,7 @@
     "@typescript-eslint/no-this-alias": "off",
     "lines-between-class-members": "off",
     "@typescript-eslint/no-inferrable-types": "off",
-    "no-use-before-define": "off",
+    // "no-use-before-define": "off",
     "no-useless-return": "off",
     "class-methods-use-this": "off",
     "no-return-assign": "off",

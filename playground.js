@@ -1,52 +1,33 @@
-// function findTheCity(
-//     n: number,
-//     edges: number[][],
-//     distanceThreshold: number
-//   ): number {
-//     const distance: number[][] = Array(n)
-//       .fill(0)
-//       .map(() => Array(n).fill(Number.MAX_SAFE_INTEGER));
+/**
+ * // Definition for a Node.
+ * function Node(val, next, random) {
+ *    this.val = val;
+ *    this.next = next;
+ *    this.random = random;
+ * };
+ */
 
-//     for (const [from, to, weight] of edges) {
-//       distance[from][to] = weight;
-//       distance[to][from] = weight;
-//     }
+/**
+ * @param {Node} head
+ * @return {Node}
+ */
+var copyRandomList = function (head) {
+  const map = new Map([null, null]);
 
-//     for (let i = 0; i < n; ++i) {
-//       for (let j = 0; j < n; ++j) {
-//         for (let k = 0; k < n; ++k) {
-//           if (k !== j) {
-//             distance[j][k] = Math.min(
-//               distance[j][k],
-//               distance[j][i] + distance[i][k]
-//             );
-//           }
-//         }
-//       }
-//     }
+  let curr = head;
 
-//     let city = 0;
-//     let minNum = n;
-//     for (let i = 0; i < n; ++i) {
-//       let curNum = 0;
-//       for (let j = 0; j < n; ++j) {
-//         distance[i][j] <= distanceThreshold && ++curNum;
-//       }
-//       if (curNum <= minNum) {
-//         minNum = curNum;
-//         city = i;
-//       }
-//     }
-//     return city;
-//   }
+  while (curr) {
+    map.set(curr, new Node(curr.val, null, null));
+    curr = curr.next;
+  }
 
-//   findTheCity(
-//     4,
-//     [
-//       [0, 1, 3],
-//       [1, 2, 1],
-//       [1, 3, 4],
-//       [2, 3, 1],
-//     ],
-//     4
-//   );
+  curr = head;
+
+  while (curr) {
+    const currClone = map.get(curr);
+    currClone.next = map.get(curr.next);
+    currClone.random = map.get(curr.random);
+  }
+
+  return map.get(head);
+};
