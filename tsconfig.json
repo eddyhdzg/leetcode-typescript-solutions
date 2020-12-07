@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "esnext",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
@@ -16,7 +16,8 @@
     "isolatedModules": false,
     "noEmit": true,
     "checkJs": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    // "strictNullChecks": false, // Maybe remove
   },
   "exclude": ["node_modules"],
   "include": ["./playground.ts", "./utils"]
