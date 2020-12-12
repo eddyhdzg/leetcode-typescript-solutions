@@ -18,6 +18,10 @@
     "checkJs": false,
     "skipLibCheck": true,
     // "strictNullChecks": false, // Maybe remove
+    "baseUrl": ".",
+    "paths": {
+      "app*": ["src/app*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["./playground.ts", "./utils"]
