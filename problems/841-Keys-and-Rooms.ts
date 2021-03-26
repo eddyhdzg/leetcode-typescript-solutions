@@ -1,15 +1,15 @@
 function canVisitAllRooms(rooms: number[][]): boolean {
-  const visited = new Set<number>([]);
-  const stack = [0];
+  const keys = new Set<number>();
+  const queue = [0];
 
-  while (stack.length) {
-    const curr = stack.shift()!;
+  while (queue.length) {
+    const curr = queue.shift()!;
 
-    if (!visited.has(curr)) {
-      visited.add(curr);
-      stack.push(...rooms[curr]);
+    if (!keys.has(curr)) {
+      keys.add(curr);
+      queue.push(...rooms[curr]);
     }
   }
 
-  return visited.size === rooms.length;
+  return keys.size === rooms.length;
 }
