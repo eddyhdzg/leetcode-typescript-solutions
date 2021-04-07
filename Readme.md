@@ -4,11 +4,11 @@ Leetcode profile - [leetcode.com/eddyhdzg/](https://leetcode.com/eddyhdzg/)
 
 - I had 143 problems solved in different languages (c++, js, ts, python) before I actually started to document my problems on August 1,2020.
 
-- Now I wilk stick with typescript
+- Now I will stick with typescript
 
-- I will try to submit 1 new typescript solution per day.
+- I will try to submit 1 or 2 new typescript solution per day.
 
-- Btw I actually submit .js solutions because there is a bigger community and I want to see how my code performs in comparison with other submissions.
+- Btw sometimes I actually submit .js solutions because there is a bigger community and I want to see how my code performs in comparison with other submissions.
 
 ### Download typescript
 
