@@ -14,7 +14,7 @@ Array.from({ length: N }, (_, i) => i+1)
 #### Bidimentional array
 
 ```
-dp = Array(m).fill(null).map(() => Array(n));
+const dp = Array(m).fill(null).map(() => Array(n));
 ```
 
 ### Slice vs Splice
