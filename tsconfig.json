@@ -17,7 +17,7 @@
     "noEmit": true,
     "checkJs": false,
     "skipLibCheck": true,
-    // "strictNullChecks": false, // Maybe remove
+    "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
       "app*": ["src/app*"]
