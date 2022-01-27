@@ -8,3 +8,4 @@ dist
 *.md
 *.log
 playground.ts
+dist
