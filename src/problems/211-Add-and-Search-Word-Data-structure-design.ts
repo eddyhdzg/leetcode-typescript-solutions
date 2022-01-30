@@ -1,11 +1,6 @@
-// Runtime: 228 ms, faster than 69.38% of JavaScript online submissions for Add and Search Word - Data structure design.
-// Memory Usage: 55.8 MB, less than 61.90% of JavaScript online submissions for Add and Search Word - Data structure design.
-
 class WordDictionary {
+  child: { [key: string]: WordDictionary };
   isWord: boolean;
-
-  child: { [Key: string]: WordDictionary };
-
   constructor() {
     this.child = {};
     this.isWord = false;
@@ -13,23 +8,27 @@ class WordDictionary {
 
   addWord(word: string): void {
     let curr: WordDictionary = this;
+
     for (const char of word) {
       if (!curr.child[char]) {
         curr.child[char] = new WordDictionary();
       }
       curr = curr.child[char];
     }
+
     curr.isWord = true;
   }
 
-  search(word: string, i = 0): boolean {
+  search(word: string): boolean {
     let curr: WordDictionary = this;
 
-    while (i < word.length) {
+    for (let i = 0; i < word.length; i++) {
       const char = word[i];
-      if (char === '.') {
+      if (char === ".") {
+        const rest = word.slice(i + 1);
+
         for (const key in curr.child) {
-          if (curr.child[key].search(word, i + 1)) {
+          if (curr.child[key].search(rest)) {
             return true;
           }
         }
@@ -39,6 +38,7 @@ class WordDictionary {
       if (!curr.child[char]) {
         return false;
       }
+
       curr = curr.child[char];
     }
 
