@@ -11,7 +11,7 @@
     "isolatedModules": false,
     // "lib": ["ES2021", "DOM", "DOM.Iterable"],
     // "target": "es6",
-    "lib": ["es6", "dom"],
+    "lib": ["es2017", "dom"],
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
