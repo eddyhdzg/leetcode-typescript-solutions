@@ -1,31 +1,38 @@
 # Leetcode TypeScript Solutions by eddyhdzg
 
-Leetcode profile - [leetcode.com/eddyhdzg/](https://leetcode.com/eddyhdzg/)
+[leetcode.com/eddyhdzg](https://leetcode.com/eddyhdzg/)
 
-- I had 143 problems solved in different languages (c++, js, ts, python) before I actually started to document my problems on August 1,2020.
+## 2026 — back at it
 
-- Now I will stick with typescript
+Coming back after a couple of years. TS-only now, setup mirrors LeetCode's judge: TypeScript `5.7.3`, target `ES2024`, `lodash@4.17.21`, all `@datastructures-js/*` pinned. Tooling: [Ultracite](https://www.ultracite.ai/) (Biome preset).
 
-- I will try to submit 1 or 2 new typescript solution per day.
+## AI-free practice
 
-- Btw sometimes I actually submit .js solutions because there is a bigger community and I want to see how my code performs in comparison with other submissions.
+Practicing without AI is the whole point. `.zed/settings.json` (tracked) turns off Zed's Edit Predictions; plain LSP completions and Biome format-on-save stay on.
 
-### Download typescript
-
-```sh
-npm install -g typescript
-npm install -g ts-node
+## Layout
 
 ```
-
-### Run typescript file
-
-```sh
-ts-node playground.ts
+src/problems/       # archival 2020-era .ts solutions — don't edit
+src/problems-2026/  # current solutions as markdown
+src/utils/classes/  # ListNode, TreeNode, Trie (barrel via @/utils/classes)
+playground.ts       # local scratch (gitignored, create as needed)
 ```
 
-### Convert ts code to js file
+## Scripts
 
 ```sh
-tsc playground.ts --outFile playground.js
+pnpm install
+pnpm check   # lint
+pnpm fix     # lint + format
 ```
+
+## New submissions
+
+Each problem lives at `src/problems-2026/<num>.<Kebab-Title>.md`. Scaffold from the template via the project slash command in Claude Code:
+
+```
+/submission 3761 minimum-absolute-distance-between-mirror-pairs
+```
+
+It fills in the title, LeetCode URL, and GitHub URL. Complexity, Submission stats, and Code are left blank — **you fill those in yourself**.

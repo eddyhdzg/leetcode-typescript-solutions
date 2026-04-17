@@ -1,5 +1,5 @@
-class Trie {
-  child: { [Key: string]: Trie };
+export class Trie {
+  child: { [key: string]: Trie };
   isEnd: boolean;
 
   constructor() {

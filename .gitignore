@@ -1,2 +1,15 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+.env
+.env.local
 .DS_Store
-node_modules
+.idea/
+*.swp
+
+# Local scratch — create manually if/when needed
+playground.ts
+
+# Local-only Claude docs (PRDs, design notes, throwaway scratch)
+.claude/scratch/
