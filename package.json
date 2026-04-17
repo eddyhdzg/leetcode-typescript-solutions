@@ -1,7 +1,7 @@
 {
   "name": "leetcode-eddyhdzg-typescript",
   "version": "2.0.0",
-  "description": "Leetcode profile - [leetcode.com/eddyhdzg/](https://leetcode.com/eddyhdzg/)",
+  "description": "LeetCode profile: https://leetcode.com/eddyhdzg/ · GitHub: https://github.com/eddyhdzg/leetcode-typescript-solutions",
   "main": "./",
   "scripts": {
     "check": "ultracite check",
