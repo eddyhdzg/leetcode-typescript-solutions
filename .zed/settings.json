@@ -1,0 +1,20 @@
+// AI-free practice: edit predictions OFF, LSP completions + Biome format-on-save ON.
+{
+  "edit_predictions": { "provider": "none", "disabled_globs": ["**"] },
+  "show_edit_predictions": false,
+
+  "format_on_save": "on",
+  "formatter": {
+    "external": {
+      "command": "/Users/eddyhdzg/Desktop/leetcode-typescript-solutions/node_modules/.bin/biome",
+      "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+    }
+  },
+
+  "languages": {
+    "TypeScript": { "show_edit_predictions": false },
+    "TSX": { "show_edit_predictions": false },
+    "JavaScript": { "show_edit_predictions": false },
+    "JSX": { "show_edit_predictions": false }
+  }
+}
