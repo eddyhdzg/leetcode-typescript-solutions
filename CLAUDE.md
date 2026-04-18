@@ -8,7 +8,7 @@ Personal LeetCode solutions in TypeScript, mirroring LeetCode's judge environmen
 
 - TypeScript `5.7.3` (pinned), Node `22.14.0`
 - Flags: `--alwaysStrict --strictBindCallApply --strictFunctionTypes --target ES2024`
-- `lodash@4.18.1` + all `@datastructures-js/*` pinned
+- `lodash@4.17.21` + all `@datastructures-js/*` pinned
 
 Don't replace pins with `^` ranges. Don't "upgrade for hygiene" — match LeetCode exactly.
 
