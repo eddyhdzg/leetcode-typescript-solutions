@@ -21,7 +21,7 @@
     "@datastructures-js/set": "4.2.2",
     "@datastructures-js/stack": "3.1.6",
     "@datastructures-js/trie": "4.2.3",
-    "lodash": "4.17.21"
+    "lodash": "4.18.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.12",
