@@ -61,9 +61,8 @@ Create `src/problems-2026/<file-stem>.md` with this structure. Fields populated 
 
 ---
 
+- [LeetCode profile](https://leetcode.com/u/eddyhdzg/)
 - [LeetCode problem](https://leetcode.com/problems/<slug>)
-- [File on GitHub](https://github.com/eddyhdzg/leetcode-typescript-solutions/blob/master/src/problems-2026/<file-stem>.md)
-- [More LeetCode TypeScript solutions](https://github.com/eddyhdzg/leetcode-typescript-solutions)
 ````
 
 ### Filling rules
