@@ -4,17 +4,45 @@
   "show_edit_predictions": false,
 
   "format_on_save": "on",
-  "formatter": {
-    "external": {
-      "command": "/Users/eddyhdzg/Desktop/leetcode-typescript-solutions/node_modules/.bin/biome",
-      "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": false
+      }
     }
   },
 
   "languages": {
-    "TypeScript": { "show_edit_predictions": false },
-    "TSX": { "show_edit_predictions": false },
-    "JavaScript": { "show_edit_predictions": false },
-    "JSX": { "show_edit_predictions": false }
+    "TypeScript": {
+      "show_edit_predictions": false,
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TSX": {
+      "show_edit_predictions": false,
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "JavaScript": {
+      "show_edit_predictions": false,
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "JSX": {
+      "show_edit_predictions": false,
+      "formatter": { "language_server": { "name": "biome" } }
+    },
+    "JSON": { "formatter": { "language_server": { "name": "biome" } } },
+    "JSONC": { "formatter": { "language_server": { "name": "biome" } } }
   }
 }

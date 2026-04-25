@@ -5,5 +5,15 @@
   ],
   "vcs": {
     "useIgnoreFile": false
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUnusedVariables": "off"
+      },
+      "style": {
+        "useBlockStatements": "off"
+      }
+    }
   }
 }
