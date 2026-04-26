@@ -61,8 +61,8 @@ Create `src/problems-2026/<file-stem>.md` with this structure. Fields populated 
 
 ---
 
-- [LeetCode profile](https://leetcode.com/u/eddyhdzg/)
-- [LeetCode problem](https://leetcode.com/problems/<slug>)
+- [https://leetcode.com/u/eddyhdzg/](https://leetcode.com/u/eddyhdzg/)
+- [https://leetcode.com/problems/<slug>](https://leetcode.com/problems/<slug>)
 ````
 
 ### Filling rules

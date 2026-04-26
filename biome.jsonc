@@ -12,7 +12,13 @@
         "noUnusedVariables": "off"
       },
       "style": {
-        "useBlockStatements": "off"
+        "useBlockStatements": "off",
+        "useForOf": "off",
+        "noNonNullAssertion": "off",
+        "useConst": {
+          "level": "warn",
+          "fix": "none"
+        }
       }
     }
   }
