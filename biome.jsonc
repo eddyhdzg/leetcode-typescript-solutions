@@ -11,6 +11,9 @@
       "correctness": {
         "noUnusedVariables": "off"
       },
+      "complexity": {
+        "noForEach": "off"
+      },
       "style": {
         "useBlockStatements": "off",
         "useForOf": "off",
