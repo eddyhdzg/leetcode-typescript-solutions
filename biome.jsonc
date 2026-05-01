@@ -18,6 +18,7 @@
         "useBlockStatements": "off",
         "useForOf": "off",
         "noNonNullAssertion": "off",
+        "useDefaultSwitchClause": "off",
         "useConst": {
           "level": "warn",
           "fix": "none"
