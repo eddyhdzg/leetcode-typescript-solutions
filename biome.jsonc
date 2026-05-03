@@ -4,6 +4,7 @@
     "ultracite/biome/core"
   ],
   "vcs": {
+    "enabled": false,
     "useIgnoreFile": false
   },
   "linter": {
