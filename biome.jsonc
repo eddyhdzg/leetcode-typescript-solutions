@@ -20,6 +20,7 @@
         "useForOf": "off",
         "noNonNullAssertion": "off",
         "useDefaultSwitchClause": "off",
+        "noParameterAssign": "off",
         "useConst": {
           "level": "warn",
           "fix": "none"
