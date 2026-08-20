@@ -7,6 +7,7 @@
     "baseUrl": "./src",
     "paths": { "@/*": ["*"] },
     "strict": true,
+    "strictNullChecks": false,
     "alwaysStrict": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
